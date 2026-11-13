@@ -7,17 +7,7 @@ an endless world of lanes with moving vehicles. Graphics go to VGA, the score is
 7-segment displays, and the player is controlled with the board's button and switches.
 
 - Plan, milestones and architecture: [docs/PLAN.md](docs/PLAN.md)
-- How we work together (branches, authorship comments): [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Folder layout
-
-| Path | What |
-|---|---|
-| `docs/PLAN.md` | Plan, milestones, who does what |
-| `docs/*.pdf` | Course instructions and our draft abstract |
-| `readme.txt` | Build/run instructions for the code upload (finish before the EXPO) |
-
-No code yet: we add it ourselves, bit by bit, following the milestones in `docs/PLAN.md`.
+- How we work together: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Build
 
