@@ -43,9 +43,6 @@ Nice to have, only once all must-haves work:
 
 ## Architecture
 
-A suggested split, to grow into bit by bit (none of these files exist yet).
-Flat file layout so the course Makefile keeps working (it compiles every `.c`/`.S` in the project root).
-
 | File | Responsibility | Owner |
 |---|---|---|
 | `main.c` | Init, main loop, game state machine (MENU → PLAYING → GAME_OVER) | both |
