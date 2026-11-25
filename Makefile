@@ -2,15 +2,15 @@
 # Changed by Neo Carlberg: added OPT (make OPT=-O0) for the performance analysis,
 # and clean only removes *.elf.txt so it no longer deletes readme.txt.
 
-SRC_DIR ?= ./
+SRC_DIR ?= ./src
 OBJ_DIR ?= ./
 SOURCES ?= $(shell find $(SRC_DIR) -name '*.c' -or -name '*.S')
 OBJECTS ?= $(addsuffix .o, $(basename $(notdir $(SOURCES))))
-LINKER ?= $(SRC_DIR)/dtekv-script.lds
+LINKER ?= ./dtekv-script.lds
 
 TOOLCHAIN ?= riscv32-unknown-elf-
 OPT ?= -O3
-CFLAGS ?= -Wall -nostdlib $(OPT) -mabi=ilp32 -march=rv32imzicsr -fno-builtin
+CFLAGS ?= -Wall -nostdlib -O3 -mabi=ilp32 -march=rv32imzicsr -fno-builtin -Iinclude
 
 
 build: clean main.bin
